@@ -16,25 +16,11 @@ type SampleRow = {
   users_returning: number;
 };
 
-type DateRange = 30 | 60 | 90;
+type NumericField = Exclude<keyof AnalyticsRow, "date">;
 
-const rangeOptions: DateRange[] = [30, 60, 90];
-const mediumOrder: Medium[] = [
-  "direct",
-  "organic",
-  "paid",
-  "referral",
-  "social",
-  "email",
-];
-
-const mediumColors: Record<Medium, string> = {
-  direct: "#22c55e",
-  organic: "#0ea5e9",
-  paid: "#ef4444",
-  referral: "#f59e0b",
-  social: "#8b5cf6",
-  email: "#14b8a6",
+type SampleResponse = {
+  ok: boolean;
+  rows: AnalyticsRow[];
 };
 
 const pieColors = {
@@ -152,11 +138,29 @@ const aggregateTotals = (rows: SampleRow[]): Totals => {
   );
 };
 
-const formatNumber = (value: number): string => {
-  return new Intl.NumberFormat("en-US", {
-    maximumFractionDigits: value >= 100 ? 0 : 1,
-  }).format(value);
-};
+  return data
+    .map((entry) => {
+      if (typeof entry !== "object" || entry === null) {
+        return null;
+      }
+      const record = entry as Record<string, unknown>;
+      const date = typeof record.date === "string" ? record.date : "";
+      const numberFields: NumericField[] = [
+        "sessions",
+        "users",
+        "pageviews",
+        "conversions",
+        "revenue",
+      ];
+
+      const parsed: AnalyticsRow = {
+        date,
+        sessions: 0,
+        users: 0,
+        pageviews: 0,
+        conversions: 0,
+        revenue: 0,
+      };
 
 const formatPercent = (value: number): string => {
   if (!Number.isFinite(value)) {
@@ -390,11 +394,32 @@ const DashboardPage = () => {
           </div>
         </header>
 
-        {loading ? (
-          <div className="flex items-center justify-center py-24">
-            <span className="text-sm uppercase tracking-[0.3em] text-slate-400">
-              Loading dashboard…
-            </span>
+        <section className="grid gap-4 rounded-xl bg-slate-900 p-6 shadow-lg">
+          <label htmlFor="data-input" className="text-sm font-medium text-slate-300">
+            Paste CSV or JSON data
+          </label>
+          <textarea
+            id="data-input"
+            className="h-40 w-full rounded-lg border border-slate-700 bg-slate-950 p-4 font-mono text-sm text-slate-100 focus:border-sky-500 focus:outline-none"
+            value={rawInput}
+            onChange={(event) => setRawInput(event.target.value)}
+            placeholder='[{"date": "2024-01-01", "sessions": 1200, ...}]'
+          />
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <button
+              type="button"
+              onClick={handleParse}
+              className="inline-flex items-center justify-center rounded-md border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition hover:border-sky-400 hover:text-sky-200"
+            >
+              Analyze data
+            </button>
+            {error ? (
+              <p className="text-sm text-rose-400">{error}</p>
+            ) : (
+              <p className="text-sm text-slate-500">
+                Parsed rows: <span className="text-slate-200">{rows.length}</span>
+              </p>
+            )}
           </div>
         ) : error ? (
           <div className="rounded-lg border border-rose-500/40 bg-rose-500/10 p-6 text-sm text-rose-100">
