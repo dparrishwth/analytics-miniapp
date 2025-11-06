@@ -1,32 +1,242 @@
 [
-  {"date": "2024-05-01", "sessions": 920, "users": 710, "pageviews": 1820, "conversions": 32, "revenue": 3120},
-  {"date": "2024-05-02", "sessions": 980, "users": 760, "pageviews": 1950, "conversions": 35, "revenue": 3280},
-  {"date": "2024-05-03", "sessions": 1025, "users": 790, "pageviews": 2025, "conversions": 38, "revenue": 3425},
-  {"date": "2024-05-04", "sessions": 970, "users": 745, "pageviews": 1895, "conversions": 33, "revenue": 3150},
-  {"date": "2024-05-05", "sessions": 1105, "users": 820, "pageviews": 2150, "conversions": 40, "revenue": 3640},
-  {"date": "2024-05-06", "sessions": 1150, "users": 845, "pageviews": 2230, "conversions": 42, "revenue": 3780},
-  {"date": "2024-05-07", "sessions": 1080, "users": 810, "pageviews": 2090, "conversions": 39, "revenue": 3520},
-  {"date": "2024-05-08", "sessions": 1125, "users": 835, "pageviews": 2185, "conversions": 41, "revenue": 3685},
-  {"date": "2024-05-09", "sessions": 1180, "users": 870, "pageviews": 2295, "conversions": 44, "revenue": 3920},
-  {"date": "2024-05-10", "sessions": 1210, "users": 890, "pageviews": 2360, "conversions": 46, "revenue": 4050},
-  {"date": "2024-05-11", "sessions": 1255, "users": 915, "pageviews": 2445, "conversions": 48, "revenue": 4210},
-  {"date": "2024-05-12", "sessions": 1300, "users": 940, "pageviews": 2530, "conversions": 50, "revenue": 4380},
-  {"date": "2024-05-13", "sessions": 1280, "users": 930, "pageviews": 2490, "conversions": 49, "revenue": 4325},
-  {"date": "2024-05-14", "sessions": 1225, "users": 895, "pageviews": 2380, "conversions": 45, "revenue": 4080},
-  {"date": "2024-05-15", "sessions": 1185, "users": 870, "pageviews": 2305, "conversions": 44, "revenue": 3970},
-  {"date": "2024-05-16", "sessions": 1260, "users": 920, "pageviews": 2465, "conversions": 47, "revenue": 4175},
-  {"date": "2024-05-17", "sessions": 1320, "users": 960, "pageviews": 2570, "conversions": 51, "revenue": 4420},
-  {"date": "2024-05-18", "sessions": 1385, "users": 1005, "pageviews": 2695, "conversions": 55, "revenue": 4685},
-  {"date": "2024-05-19", "sessions": 1410, "users": 1020, "pageviews": 2750, "conversions": 57, "revenue": 4820},
-  {"date": "2024-05-20", "sessions": 1350, "users": 980, "pageviews": 2640, "conversions": 53, "revenue": 4550},
-  {"date": "2024-05-21", "sessions": 1295, "users": 945, "pageviews": 2525, "conversions": 50, "revenue": 4350},
-  {"date": "2024-05-22", "sessions": 1240, "users": 905, "pageviews": 2420, "conversions": 46, "revenue": 4120},
-  {"date": "2024-05-23", "sessions": 1188, "users": 872, "pageviews": 2335, "conversions": 44, "revenue": 3985},
-  {"date": "2024-05-24", "sessions": 1155, "users": 850, "pageviews": 2270, "conversions": 43, "revenue": 3890},
-  {"date": "2024-05-25", "sessions": 1205, "users": 885, "pageviews": 2365, "conversions": 45, "revenue": 4065},
-  {"date": "2024-05-26", "sessions": 1270, "users": 930, "pageviews": 2485, "conversions": 48, "revenue": 4255},
-  {"date": "2024-05-27", "sessions": 1335, "users": 975, "pageviews": 2610, "conversions": 52, "revenue": 4480},
-  {"date": "2024-05-28", "sessions": 1375, "users": 1002, "pageviews": 2685, "conversions": 54, "revenue": 4625},
-  {"date": "2024-05-29", "sessions": 1405, "users": 1018, "pageviews": 2740, "conversions": 56, "revenue": 4770},
-  {"date": "2024-05-30", "sessions": 1450, "users": 1050, "pageviews": 2825, "conversions": 58, "revenue": 4950}
+  {
+    "date": "2024-01-01",
+    "sessions": 1443,
+    "users": 767,
+    "pageviews": 1716,
+    "conversions": 66,
+    "revenue": 3468
+  },
+  {
+    "date": "2024-01-02",
+    "sessions": 1478,
+    "users": 755,
+    "pageviews": 2187,
+    "conversions": 70,
+    "revenue": 4357
+  },
+  {
+    "date": "2024-01-03",
+    "sessions": 863,
+    "users": 699,
+    "pageviews": 1605,
+    "conversions": 28,
+    "revenue": 2791
+  },
+  {
+    "date": "2024-01-04",
+    "sessions": 896,
+    "users": 1102,
+    "pageviews": 2519,
+    "conversions": 34,
+    "revenue": 2817
+  },
+  {
+    "date": "2024-01-05",
+    "sessions": 1190,
+    "users": 1002,
+    "pageviews": 2853,
+    "conversions": 34,
+    "revenue": 3569
+  },
+  {
+    "date": "2024-01-06",
+    "sessions": 1302,
+    "users": 1104,
+    "pageviews": 2322,
+    "conversions": 38,
+    "revenue": 4933
+  },
+  {
+    "date": "2024-01-07",
+    "sessions": 807,
+    "users": 766,
+    "pageviews": 2883,
+    "conversions": 28,
+    "revenue": 5847
+  },
+  {
+    "date": "2024-01-08",
+    "sessions": 1225,
+    "users": 1192,
+    "pageviews": 1671,
+    "conversions": 37,
+    "revenue": 2571
+  },
+  {
+    "date": "2024-01-09",
+    "sessions": 1428,
+    "users": 637,
+    "pageviews": 2784,
+    "conversions": 37,
+    "revenue": 4628
+  },
+  {
+    "date": "2024-01-10",
+    "sessions": 1356,
+    "users": 1142,
+    "pageviews": 1913,
+    "conversions": 34,
+    "revenue": 5485
+  },
+  {
+    "date": "2024-01-11",
+    "sessions": 1357,
+    "users": 812,
+    "pageviews": 2599,
+    "conversions": 25,
+    "revenue": 5601
+  },
+  {
+    "date": "2024-01-12",
+    "sessions": 1249,
+    "users": 838,
+    "pageviews": 2125,
+    "conversions": 20,
+    "revenue": 5311
+  },
+  {
+    "date": "2024-01-13",
+    "sessions": 827,
+    "users": 715,
+    "pageviews": 2200,
+    "conversions": 46,
+    "revenue": 5695
+  },
+  {
+    "date": "2024-01-14",
+    "sessions": 1087,
+    "users": 1042,
+    "pageviews": 2606,
+    "conversions": 27,
+    "revenue": 2286
+  },
+  {
+    "date": "2024-01-15",
+    "sessions": 1207,
+    "users": 1040,
+    "pageviews": 1851,
+    "conversions": 65,
+    "revenue": 2511
+  },
+  {
+    "date": "2024-01-16",
+    "sessions": 1493,
+    "users": 1148,
+    "pageviews": 2761,
+    "conversions": 61,
+    "revenue": 6149
+  },
+  {
+    "date": "2024-01-17",
+    "sessions": 1175,
+    "users": 781,
+    "pageviews": 2126,
+    "conversions": 55,
+    "revenue": 2693
+  },
+  {
+    "date": "2024-01-18",
+    "sessions": 1277,
+    "users": 1122,
+    "pageviews": 2389,
+    "conversions": 62,
+    "revenue": 5088
+  },
+  {
+    "date": "2024-01-19",
+    "sessions": 1355,
+    "users": 1022,
+    "pageviews": 2051,
+    "conversions": 65,
+    "revenue": 6697
+  },
+  {
+    "date": "2024-01-20",
+    "sessions": 1399,
+    "users": 1153,
+    "pageviews": 2916,
+    "conversions": 48,
+    "revenue": 6352
+  },
+  {
+    "date": "2024-01-21",
+    "sessions": 1254,
+    "users": 1098,
+    "pageviews": 1561,
+    "conversions": 30,
+    "revenue": 4251
+  },
+  {
+    "date": "2024-01-22",
+    "sessions": 1015,
+    "users": 1102,
+    "pageviews": 2735,
+    "conversions": 40,
+    "revenue": 2285
+  },
+  {
+    "date": "2024-01-23",
+    "sessions": 1324,
+    "users": 715,
+    "pageviews": 2787,
+    "conversions": 27,
+    "revenue": 3690
+  },
+  {
+    "date": "2024-01-24",
+    "sessions": 868,
+    "users": 1056,
+    "pageviews": 2789,
+    "conversions": 52,
+    "revenue": 5703
+  },
+  {
+    "date": "2024-01-25",
+    "sessions": 999,
+    "users": 669,
+    "pageviews": 1914,
+    "conversions": 27,
+    "revenue": 5497
+  },
+  {
+    "date": "2024-01-26",
+    "sessions": 1154,
+    "users": 1120,
+    "pageviews": 2203,
+    "conversions": 62,
+    "revenue": 5718
+  },
+  {
+    "date": "2024-01-27",
+    "sessions": 950,
+    "users": 1065,
+    "pageviews": 2719,
+    "conversions": 51,
+    "revenue": 4936
+  },
+  {
+    "date": "2024-01-28",
+    "sessions": 1025,
+    "users": 1066,
+    "pageviews": 2965,
+    "conversions": 31,
+    "revenue": 3273
+  },
+  {
+    "date": "2024-01-29",
+    "sessions": 1232,
+    "users": 850,
+    "pageviews": 2992,
+    "conversions": 46,
+    "revenue": 5352
+  },
+  {
+    "date": "2024-01-30",
+    "sessions": 1067,
+    "users": 863,
+    "pageviews": 2939,
+    "conversions": 35,
+    "revenue": 5109
+  }
 ]
