@@ -1,14 +1,16 @@
-import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
+import { NextResponse } from "next/server";
 
 type SampleRow = {
   date: string;
+  medium: "direct" | "organic" | "paid" | "referral" | "social" | "email";
   sessions: number;
   users: number;
   pageviews: number;
   conversions: number;
-  revenue: number;
+  users_new: number;
+  users_returning: number;
 };
 
 export async function GET() {

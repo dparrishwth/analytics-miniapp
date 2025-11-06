@@ -1,242 +1,1212 @@
 [
   {
     "date": "2024-01-01",
-    "sessions": 1443,
-    "users": 767,
-    "pageviews": 1716,
-    "conversions": 66,
-    "revenue": 3468
+    "medium": "social",
+    "sessions": 835,
+    "users": 624,
+    "pageviews": 2380,
+    "conversions": 32,
+    "users_new": 435,
+    "users_returning": 189
   },
   {
     "date": "2024-01-02",
-    "sessions": 1478,
-    "users": 755,
-    "pageviews": 2187,
-    "conversions": 70,
-    "revenue": 4357
+    "medium": "paid",
+    "sessions": 1421,
+    "users": 893,
+    "pageviews": 2545,
+    "conversions": 51,
+    "users_new": 446,
+    "users_returning": 447
   },
   {
     "date": "2024-01-03",
-    "sessions": 863,
-    "users": 699,
-    "pageviews": 1605,
-    "conversions": 28,
-    "revenue": 2791
+    "medium": "referral",
+    "sessions": 1324,
+    "users": 1008,
+    "pageviews": 1956,
+    "conversions": 66,
+    "users_new": 633,
+    "users_returning": 375
   },
   {
     "date": "2024-01-04",
-    "sessions": 896,
-    "users": 1102,
-    "pageviews": 2519,
-    "conversions": 34,
-    "revenue": 2817
+    "medium": "email",
+    "sessions": 1203,
+    "users": 739,
+    "pageviews": 2987,
+    "conversions": 70,
+    "users_new": 436,
+    "users_returning": 303
   },
   {
     "date": "2024-01-05",
-    "sessions": 1190,
-    "users": 1002,
-    "pageviews": 2853,
-    "conversions": 34,
-    "revenue": 3569
+    "medium": "paid",
+    "sessions": 919,
+    "users": 1177,
+    "pageviews": 1723,
+    "conversions": 49,
+    "users_new": 772,
+    "users_returning": 405
   },
   {
     "date": "2024-01-06",
-    "sessions": 1302,
-    "users": 1104,
-    "pageviews": 2322,
-    "conversions": 38,
-    "revenue": 4933
+    "medium": "referral",
+    "sessions": 1325,
+    "users": 766,
+    "pageviews": 2472,
+    "conversions": 57,
+    "users_new": 518,
+    "users_returning": 248
   },
   {
     "date": "2024-01-07",
-    "sessions": 807,
-    "users": 766,
-    "pageviews": 2883,
-    "conversions": 28,
-    "revenue": 5847
+    "medium": "email",
+    "sessions": 1459,
+    "users": 878,
+    "pageviews": 2195,
+    "conversions": 38,
+    "users_new": 550,
+    "users_returning": 328
   },
   {
     "date": "2024-01-08",
-    "sessions": 1225,
-    "users": 1192,
-    "pageviews": 1671,
-    "conversions": 37,
-    "revenue": 2571
+    "medium": "organic",
+    "sessions": 851,
+    "users": 765,
+    "pageviews": 2579,
+    "conversions": 48,
+    "users_new": 407,
+    "users_returning": 358
   },
   {
     "date": "2024-01-09",
-    "sessions": 1428,
-    "users": 637,
-    "pageviews": 2784,
-    "conversions": 37,
-    "revenue": 4628
+    "medium": "organic",
+    "sessions": 801,
+    "users": 854,
+    "pageviews": 2515,
+    "conversions": 65,
+    "users_new": 365,
+    "users_returning": 489
   },
   {
     "date": "2024-01-10",
-    "sessions": 1356,
-    "users": 1142,
-    "pageviews": 1913,
-    "conversions": 34,
-    "revenue": 5485
+    "medium": "organic",
+    "sessions": 1306,
+    "users": 767,
+    "pageviews": 1575,
+    "conversions": 35,
+    "users_new": 328,
+    "users_returning": 439
   },
   {
     "date": "2024-01-11",
-    "sessions": 1357,
-    "users": 812,
-    "pageviews": 2599,
-    "conversions": 25,
-    "revenue": 5601
+    "medium": "paid",
+    "sessions": 1341,
+    "users": 1191,
+    "pageviews": 2339,
+    "conversions": 48,
+    "users_new": 763,
+    "users_returning": 428
   },
   {
     "date": "2024-01-12",
-    "sessions": 1249,
-    "users": 838,
-    "pageviews": 2125,
-    "conversions": 20,
-    "revenue": 5311
+    "medium": "email",
+    "sessions": 836,
+    "users": 770,
+    "pageviews": 1672,
+    "conversions": 44,
+    "users_new": 341,
+    "users_returning": 429
   },
   {
     "date": "2024-01-13",
-    "sessions": 827,
-    "users": 715,
-    "pageviews": 2200,
-    "conversions": 46,
-    "revenue": 5695
+    "medium": "social",
+    "sessions": 1123,
+    "users": 1066,
+    "pageviews": 2534,
+    "conversions": 55,
+    "users_new": 434,
+    "users_returning": 632
   },
   {
     "date": "2024-01-14",
-    "sessions": 1087,
-    "users": 1042,
-    "pageviews": 2606,
-    "conversions": 27,
-    "revenue": 2286
+    "medium": "email",
+    "sessions": 1190,
+    "users": 891,
+    "pageviews": 2204,
+    "conversions": 66,
+    "users_new": 561,
+    "users_returning": 330
   },
   {
     "date": "2024-01-15",
-    "sessions": 1207,
-    "users": 1040,
-    "pageviews": 1851,
-    "conversions": 65,
-    "revenue": 2511
+    "medium": "organic",
+    "sessions": 1383,
+    "users": 1094,
+    "pageviews": 2792,
+    "conversions": 44,
+    "users_new": 627,
+    "users_returning": 467
   },
   {
     "date": "2024-01-16",
-    "sessions": 1493,
-    "users": 1148,
-    "pageviews": 2761,
-    "conversions": 61,
-    "revenue": 6149
+    "medium": "social",
+    "sessions": 1220,
+    "users": 672,
+    "pageviews": 2691,
+    "conversions": 57,
+    "users_new": 275,
+    "users_returning": 397
   },
   {
     "date": "2024-01-17",
-    "sessions": 1175,
-    "users": 781,
-    "pageviews": 2126,
-    "conversions": 55,
-    "revenue": 2693
+    "medium": "direct",
+    "sessions": 818,
+    "users": 653,
+    "pageviews": 1557,
+    "conversions": 64,
+    "users_new": 313,
+    "users_returning": 340
   },
   {
     "date": "2024-01-18",
-    "sessions": 1277,
-    "users": 1122,
-    "pageviews": 2389,
-    "conversions": 62,
-    "revenue": 5088
+    "medium": "paid",
+    "sessions": 1080,
+    "users": 941,
+    "pageviews": 2796,
+    "conversions": 61,
+    "users_new": 452,
+    "users_returning": 489
   },
   {
     "date": "2024-01-19",
-    "sessions": 1355,
-    "users": 1022,
-    "pageviews": 2051,
-    "conversions": 65,
-    "revenue": 6697
+    "medium": "social",
+    "sessions": 875,
+    "users": 796,
+    "pageviews": 1706,
+    "conversions": 63,
+    "users_new": 329,
+    "users_returning": 467
   },
   {
     "date": "2024-01-20",
-    "sessions": 1399,
-    "users": 1153,
-    "pageviews": 2916,
-    "conversions": 48,
-    "revenue": 6352
+    "medium": "social",
+    "sessions": 1288,
+    "users": 784,
+    "pageviews": 2508,
+    "conversions": 50,
+    "users_new": 481,
+    "users_returning": 303
   },
   {
     "date": "2024-01-21",
-    "sessions": 1254,
-    "users": 1098,
-    "pageviews": 1561,
-    "conversions": 30,
-    "revenue": 4251
+    "medium": "direct",
+    "sessions": 960,
+    "users": 702,
+    "pageviews": 1998,
+    "conversions": 59,
+    "users_new": 373,
+    "users_returning": 329
   },
   {
     "date": "2024-01-22",
-    "sessions": 1015,
-    "users": 1102,
-    "pageviews": 2735,
-    "conversions": 40,
-    "revenue": 2285
+    "medium": "direct",
+    "sessions": 888,
+    "users": 664,
+    "pageviews": 1947,
+    "conversions": 64,
+    "users_new": 399,
+    "users_returning": 265
   },
   {
     "date": "2024-01-23",
-    "sessions": 1324,
-    "users": 715,
-    "pageviews": 2787,
-    "conversions": 27,
-    "revenue": 3690
+    "medium": "email",
+    "sessions": 1304,
+    "users": 1136,
+    "pageviews": 2575,
+    "conversions": 60,
+    "users_new": 531,
+    "users_returning": 605
   },
   {
     "date": "2024-01-24",
-    "sessions": 868,
-    "users": 1056,
-    "pageviews": 2789,
-    "conversions": 52,
-    "revenue": 5703
+    "medium": "referral",
+    "sessions": 1132,
+    "users": 805,
+    "pageviews": 1950,
+    "conversions": 42,
+    "users_new": 500,
+    "users_returning": 305
   },
   {
     "date": "2024-01-25",
-    "sessions": 999,
-    "users": 669,
-    "pageviews": 1914,
-    "conversions": 27,
-    "revenue": 5497
+    "medium": "referral",
+    "sessions": 1266,
+    "users": 1062,
+    "pageviews": 1958,
+    "conversions": 65,
+    "users_new": 660,
+    "users_returning": 402
   },
   {
     "date": "2024-01-26",
-    "sessions": 1154,
-    "users": 1120,
-    "pageviews": 2203,
+    "medium": "organic",
+    "sessions": 1366,
+    "users": 888,
+    "pageviews": 1884,
     "conversions": 62,
-    "revenue": 5718
+    "users_new": 459,
+    "users_returning": 429
   },
   {
     "date": "2024-01-27",
-    "sessions": 950,
-    "users": 1065,
-    "pageviews": 2719,
-    "conversions": 51,
-    "revenue": 4936
+    "medium": "paid",
+    "sessions": 1254,
+    "users": 878,
+    "pageviews": 1747,
+    "conversions": 53,
+    "users_new": 589,
+    "users_returning": 289
   },
   {
     "date": "2024-01-28",
-    "sessions": 1025,
-    "users": 1066,
-    "pageviews": 2965,
-    "conversions": 31,
-    "revenue": 3273
+    "medium": "email",
+    "sessions": 986,
+    "users": 816,
+    "pageviews": 2576,
+    "conversions": 67,
+    "users_new": 406,
+    "users_returning": 410
   },
   {
     "date": "2024-01-29",
-    "sessions": 1232,
-    "users": 850,
-    "pageviews": 2992,
-    "conversions": 46,
-    "revenue": 5352
+    "medium": "social",
+    "sessions": 1436,
+    "users": 1100,
+    "pageviews": 2207,
+    "conversions": 68,
+    "users_new": 468,
+    "users_returning": 632
   },
   {
     "date": "2024-01-30",
-    "sessions": 1067,
-    "users": 863,
-    "pageviews": 2939,
+    "medium": "referral",
+    "sessions": 943,
+    "users": 664,
+    "pageviews": 2598,
+    "conversions": 25,
+    "users_new": 307,
+    "users_returning": 357
+  },
+  {
+    "date": "2024-01-31",
+    "medium": "direct",
+    "sessions": 821,
+    "users": 1038,
+    "pageviews": 2597,
+    "conversions": 56,
+    "users_new": 626,
+    "users_returning": 412
+  },
+  {
+    "date": "2024-02-01",
+    "medium": "social",
+    "sessions": 1243,
+    "users": 907,
+    "pageviews": 2721,
+    "conversions": 62,
+    "users_new": 484,
+    "users_returning": 423
+  },
+  {
+    "date": "2024-02-02",
+    "medium": "email",
+    "sessions": 1178,
+    "users": 1016,
+    "pageviews": 2594,
+    "conversions": 43,
+    "users_new": 450,
+    "users_returning": 566
+  },
+  {
+    "date": "2024-02-03",
+    "medium": "organic",
+    "sessions": 1098,
+    "users": 875,
+    "pageviews": 2568,
+    "conversions": 64,
+    "users_new": 507,
+    "users_returning": 368
+  },
+  {
+    "date": "2024-02-04",
+    "medium": "referral",
+    "sessions": 1057,
+    "users": 1157,
+    "pageviews": 2203,
+    "conversions": 27,
+    "users_new": 587,
+    "users_returning": 570
+  },
+  {
+    "date": "2024-02-05",
+    "medium": "direct",
+    "sessions": 1197,
+    "users": 1017,
+    "pageviews": 2159,
+    "conversions": 60,
+    "users_new": 651,
+    "users_returning": 366
+  },
+  {
+    "date": "2024-02-06",
+    "medium": "organic",
+    "sessions": 1228,
+    "users": 1156,
+    "pageviews": 2740,
+    "conversions": 55,
+    "users_new": 604,
+    "users_returning": 552
+  },
+  {
+    "date": "2024-02-07",
+    "medium": "direct",
+    "sessions": 1441,
+    "users": 1162,
+    "pageviews": 2776,
+    "conversions": 60,
+    "users_new": 693,
+    "users_returning": 469
+  },
+  {
+    "date": "2024-02-08",
+    "medium": "referral",
+    "sessions": 985,
+    "users": 820,
+    "pageviews": 2241,
+    "conversions": 25,
+    "users_new": 486,
+    "users_returning": 334
+  },
+  {
+    "date": "2024-02-09",
+    "medium": "paid",
+    "sessions": 1256,
+    "users": 616,
+    "pageviews": 2855,
+    "conversions": 67,
+    "users_new": 381,
+    "users_returning": 235
+  },
+  {
+    "date": "2024-02-10",
+    "medium": "paid",
+    "sessions": 1085,
+    "users": 1195,
+    "pageviews": 2199,
+    "conversions": 49,
+    "users_new": 541,
+    "users_returning": 654
+  },
+  {
+    "date": "2024-02-11",
+    "medium": "direct",
+    "sessions": 1000,
+    "users": 684,
+    "pageviews": 1735,
+    "conversions": 30,
+    "users_new": 343,
+    "users_returning": 341
+  },
+  {
+    "date": "2024-02-12",
+    "medium": "organic",
+    "sessions": 1195,
+    "users": 690,
+    "pageviews": 2525,
+    "conversions": 54,
+    "users_new": 289,
+    "users_returning": 401
+  },
+  {
+    "date": "2024-02-13",
+    "medium": "email",
+    "sessions": 1268,
+    "users": 802,
+    "pageviews": 1626,
+    "conversions": 55,
+    "users_new": 365,
+    "users_returning": 437
+  },
+  {
+    "date": "2024-02-14",
+    "medium": "paid",
+    "sessions": 1317,
+    "users": 1190,
+    "pageviews": 2421,
+    "conversions": 48,
+    "users_new": 672,
+    "users_returning": 518
+  },
+  {
+    "date": "2024-02-15",
+    "medium": "direct",
+    "sessions": 1242,
+    "users": 1169,
+    "pageviews": 2873,
+    "conversions": 34,
+    "users_new": 480,
+    "users_returning": 689
+  },
+  {
+    "date": "2024-02-16",
+    "medium": "paid",
+    "sessions": 1352,
+    "users": 834,
+    "pageviews": 1825,
+    "conversions": 34,
+    "users_new": 372,
+    "users_returning": 462
+  },
+  {
+    "date": "2024-02-17",
+    "medium": "social",
+    "sessions": 1285,
+    "users": 609,
+    "pageviews": 2859,
+    "conversions": 28,
+    "users_new": 273,
+    "users_returning": 336
+  },
+  {
+    "date": "2024-02-18",
+    "medium": "social",
+    "sessions": 921,
+    "users": 607,
+    "pageviews": 2156,
+    "conversions": 69,
+    "users_new": 359,
+    "users_returning": 248
+  },
+  {
+    "date": "2024-02-19",
+    "medium": "referral",
+    "sessions": 1169,
+    "users": 742,
+    "pageviews": 2904,
+    "conversions": 44,
+    "users_new": 370,
+    "users_returning": 372
+  },
+  {
+    "date": "2024-02-20",
+    "medium": "organic",
+    "sessions": 1424,
+    "users": 1184,
+    "pageviews": 2493,
+    "conversions": 36,
+    "users_new": 778,
+    "users_returning": 406
+  },
+  {
+    "date": "2024-02-21",
+    "medium": "organic",
+    "sessions": 1433,
+    "users": 1082,
+    "pageviews": 2587,
+    "conversions": 39,
+    "users_new": 693,
+    "users_returning": 389
+  },
+  {
+    "date": "2024-02-22",
+    "medium": "email",
+    "sessions": 1088,
+    "users": 893,
+    "pageviews": 2848,
+    "conversions": 34,
+    "users_new": 573,
+    "users_returning": 320
+  },
+  {
+    "date": "2024-02-23",
+    "medium": "social",
+    "sessions": 1283,
+    "users": 602,
+    "pageviews": 2421,
+    "conversions": 22,
+    "users_new": 370,
+    "users_returning": 232
+  },
+  {
+    "date": "2024-02-24",
+    "medium": "organic",
+    "sessions": 1434,
+    "users": 963,
+    "pageviews": 1713,
+    "conversions": 67,
+    "users_new": 426,
+    "users_returning": 537
+  },
+  {
+    "date": "2024-02-25",
+    "medium": "paid",
+    "sessions": 862,
+    "users": 613,
+    "pageviews": 2276,
+    "conversions": 45,
+    "users_new": 322,
+    "users_returning": 291
+  },
+  {
+    "date": "2024-02-26",
+    "medium": "email",
+    "sessions": 1334,
+    "users": 1079,
+    "pageviews": 2745,
+    "conversions": 48,
+    "users_new": 747,
+    "users_returning": 332
+  },
+  {
+    "date": "2024-02-27",
+    "medium": "paid",
+    "sessions": 1299,
+    "users": 1069,
+    "pageviews": 2112,
+    "conversions": 40,
+    "users_new": 431,
+    "users_returning": 638
+  },
+  {
+    "date": "2024-02-28",
+    "medium": "referral",
+    "sessions": 1202,
+    "users": 914,
+    "pageviews": 2735,
+    "conversions": 41,
+    "users_new": 466,
+    "users_returning": 448
+  },
+  {
+    "date": "2024-02-29",
+    "medium": "referral",
+    "sessions": 1225,
+    "users": 1063,
+    "pageviews": 2861,
+    "conversions": 50,
+    "users_new": 581,
+    "users_returning": 482
+  },
+  {
+    "date": "2024-03-01",
+    "medium": "paid",
+    "sessions": 1114,
+    "users": 1018,
+    "pageviews": 2145,
+    "conversions": 49,
+    "users_new": 541,
+    "users_returning": 477
+  },
+  {
+    "date": "2024-03-02",
+    "medium": "email",
+    "sessions": 1364,
+    "users": 877,
+    "pageviews": 2893,
+    "conversions": 29,
+    "users_new": 451,
+    "users_returning": 426
+  },
+  {
+    "date": "2024-03-03",
+    "medium": "direct",
+    "sessions": 1229,
+    "users": 858,
+    "pageviews": 1711,
+    "conversions": 62,
+    "users_new": 344,
+    "users_returning": 514
+  },
+  {
+    "date": "2024-03-04",
+    "medium": "social",
+    "sessions": 1174,
+    "users": 621,
+    "pageviews": 1828,
+    "conversions": 47,
+    "users_new": 399,
+    "users_returning": 222
+  },
+  {
+    "date": "2024-03-05",
+    "medium": "referral",
+    "sessions": 1267,
+    "users": 772,
+    "pageviews": 1780,
+    "conversions": 39,
+    "users_new": 311,
+    "users_returning": 461
+  },
+  {
+    "date": "2024-03-06",
+    "medium": "direct",
+    "sessions": 1369,
+    "users": 887,
+    "pageviews": 1713,
+    "conversions": 54,
+    "users_new": 469,
+    "users_returning": 418
+  },
+  {
+    "date": "2024-03-07",
+    "medium": "paid",
+    "sessions": 1030,
+    "users": 703,
+    "pageviews": 2905,
+    "conversions": 56,
+    "users_new": 424,
+    "users_returning": 279
+  },
+  {
+    "date": "2024-03-08",
+    "medium": "organic",
+    "sessions": 1454,
+    "users": 951,
+    "pageviews": 2461,
+    "conversions": 33,
+    "users_new": 654,
+    "users_returning": 297
+  },
+  {
+    "date": "2024-03-09",
+    "medium": "social",
+    "sessions": 1428,
+    "users": 941,
+    "pageviews": 2859,
+    "conversions": 67,
+    "users_new": 568,
+    "users_returning": 373
+  },
+  {
+    "date": "2024-03-10",
+    "medium": "referral",
+    "sessions": 1163,
+    "users": 1056,
+    "pageviews": 2003,
+    "conversions": 49,
+    "users_new": 580,
+    "users_returning": 476
+  },
+  {
+    "date": "2024-03-11",
+    "medium": "paid",
+    "sessions": 1361,
+    "users": 802,
+    "pageviews": 2842,
+    "conversions": 24,
+    "users_new": 556,
+    "users_returning": 246
+  },
+  {
+    "date": "2024-03-12",
+    "medium": "direct",
+    "sessions": 1372,
+    "users": 618,
+    "pageviews": 1864,
+    "conversions": 48,
+    "users_new": 411,
+    "users_returning": 207
+  },
+  {
+    "date": "2024-03-13",
+    "medium": "direct",
+    "sessions": 1233,
+    "users": 768,
+    "pageviews": 1854,
     "conversions": 35,
-    "revenue": 5109
+    "users_new": 332,
+    "users_returning": 436
+  },
+  {
+    "date": "2024-03-14",
+    "medium": "paid",
+    "sessions": 1033,
+    "users": 1177,
+    "pageviews": 2090,
+    "conversions": 22,
+    "users_new": 499,
+    "users_returning": 678
+  },
+  {
+    "date": "2024-03-15",
+    "medium": "referral",
+    "sessions": 1006,
+    "users": 1099,
+    "pageviews": 2122,
+    "conversions": 40,
+    "users_new": 479,
+    "users_returning": 620
+  },
+  {
+    "date": "2024-03-16",
+    "medium": "referral",
+    "sessions": 861,
+    "users": 1057,
+    "pageviews": 2021,
+    "conversions": 35,
+    "users_new": 729,
+    "users_returning": 328
+  },
+  {
+    "date": "2024-03-17",
+    "medium": "direct",
+    "sessions": 1429,
+    "users": 740,
+    "pageviews": 2300,
+    "conversions": 65,
+    "users_new": 318,
+    "users_returning": 422
+  },
+  {
+    "date": "2024-03-18",
+    "medium": "referral",
+    "sessions": 1190,
+    "users": 1121,
+    "pageviews": 2200,
+    "conversions": 33,
+    "users_new": 532,
+    "users_returning": 589
+  },
+  {
+    "date": "2024-03-19",
+    "medium": "email",
+    "sessions": 1411,
+    "users": 856,
+    "pageviews": 2887,
+    "conversions": 20,
+    "users_new": 371,
+    "users_returning": 485
+  },
+  {
+    "date": "2024-03-20",
+    "medium": "social",
+    "sessions": 1299,
+    "users": 828,
+    "pageviews": 2687,
+    "conversions": 26,
+    "users_new": 479,
+    "users_returning": 349
+  },
+  {
+    "date": "2024-03-21",
+    "medium": "referral",
+    "sessions": 1208,
+    "users": 679,
+    "pageviews": 1865,
+    "conversions": 33,
+    "users_new": 403,
+    "users_returning": 276
+  },
+  {
+    "date": "2024-03-22",
+    "medium": "social",
+    "sessions": 1486,
+    "users": 1200,
+    "pageviews": 2032,
+    "conversions": 35,
+    "users_new": 768,
+    "users_returning": 432
+  },
+  {
+    "date": "2024-03-23",
+    "medium": "paid",
+    "sessions": 1233,
+    "users": 984,
+    "pageviews": 1985,
+    "conversions": 41,
+    "users_new": 585,
+    "users_returning": 399
+  },
+  {
+    "date": "2024-03-24",
+    "medium": "organic",
+    "sessions": 900,
+    "users": 877,
+    "pageviews": 2820,
+    "conversions": 21,
+    "users_new": 489,
+    "users_returning": 388
+  },
+  {
+    "date": "2024-03-25",
+    "medium": "social",
+    "sessions": 994,
+    "users": 1073,
+    "pageviews": 2432,
+    "conversions": 68,
+    "users_new": 469,
+    "users_returning": 604
+  },
+  {
+    "date": "2024-03-26",
+    "medium": "email",
+    "sessions": 852,
+    "users": 924,
+    "pageviews": 2843,
+    "conversions": 66,
+    "users_new": 623,
+    "users_returning": 301
+  },
+  {
+    "date": "2024-03-27",
+    "medium": "referral",
+    "sessions": 1141,
+    "users": 1153,
+    "pageviews": 1575,
+    "conversions": 30,
+    "users_new": 535,
+    "users_returning": 618
+  },
+  {
+    "date": "2024-03-28",
+    "medium": "organic",
+    "sessions": 1428,
+    "users": 906,
+    "pageviews": 2726,
+    "conversions": 44,
+    "users_new": 605,
+    "users_returning": 301
+  },
+  {
+    "date": "2024-03-29",
+    "medium": "social",
+    "sessions": 908,
+    "users": 1145,
+    "pageviews": 1892,
+    "conversions": 23,
+    "users_new": 570,
+    "users_returning": 575
+  },
+  {
+    "date": "2024-03-30",
+    "medium": "social",
+    "sessions": 837,
+    "users": 751,
+    "pageviews": 2512,
+    "conversions": 57,
+    "users_new": 444,
+    "users_returning": 307
+  },
+  {
+    "date": "2024-03-31",
+    "medium": "social",
+    "sessions": 1338,
+    "users": 924,
+    "pageviews": 1823,
+    "conversions": 20,
+    "users_new": 441,
+    "users_returning": 483
+  },
+  {
+    "date": "2024-04-01",
+    "medium": "paid",
+    "sessions": 1305,
+    "users": 672,
+    "pageviews": 1955,
+    "conversions": 40,
+    "users_new": 369,
+    "users_returning": 303
+  },
+  {
+    "date": "2024-04-02",
+    "medium": "paid",
+    "sessions": 993,
+    "users": 999,
+    "pageviews": 2090,
+    "conversions": 53,
+    "users_new": 668,
+    "users_returning": 331
+  },
+  {
+    "date": "2024-04-03",
+    "medium": "direct",
+    "sessions": 1320,
+    "users": 1168,
+    "pageviews": 2844,
+    "conversions": 48,
+    "users_new": 502,
+    "users_returning": 666
+  },
+  {
+    "date": "2024-04-04",
+    "medium": "email",
+    "sessions": 891,
+    "users": 839,
+    "pageviews": 2178,
+    "conversions": 28,
+    "users_new": 515,
+    "users_returning": 324
+  },
+  {
+    "date": "2024-04-05",
+    "medium": "paid",
+    "sessions": 1095,
+    "users": 1135,
+    "pageviews": 1896,
+    "conversions": 51,
+    "users_new": 533,
+    "users_returning": 602
+  },
+  {
+    "date": "2024-04-06",
+    "medium": "email",
+    "sessions": 1012,
+    "users": 677,
+    "pageviews": 1990,
+    "conversions": 41,
+    "users_new": 469,
+    "users_returning": 208
+  },
+  {
+    "date": "2024-04-07",
+    "medium": "direct",
+    "sessions": 1419,
+    "users": 984,
+    "pageviews": 2030,
+    "conversions": 46,
+    "users_new": 624,
+    "users_returning": 360
+  },
+  {
+    "date": "2024-04-08",
+    "medium": "organic",
+    "sessions": 1093,
+    "users": 1147,
+    "pageviews": 2936,
+    "conversions": 31,
+    "users_new": 713,
+    "users_returning": 434
+  },
+  {
+    "date": "2024-04-09",
+    "medium": "email",
+    "sessions": 870,
+    "users": 894,
+    "pageviews": 2371,
+    "conversions": 60,
+    "users_new": 439,
+    "users_returning": 455
+  },
+  {
+    "date": "2024-04-10",
+    "medium": "email",
+    "sessions": 843,
+    "users": 771,
+    "pageviews": 2338,
+    "conversions": 63,
+    "users_new": 491,
+    "users_returning": 280
+  },
+  {
+    "date": "2024-04-11",
+    "medium": "direct",
+    "sessions": 857,
+    "users": 779,
+    "pageviews": 2427,
+    "conversions": 66,
+    "users_new": 371,
+    "users_returning": 408
+  },
+  {
+    "date": "2024-04-12",
+    "medium": "organic",
+    "sessions": 941,
+    "users": 1152,
+    "pageviews": 2598,
+    "conversions": 25,
+    "users_new": 594,
+    "users_returning": 558
+  },
+  {
+    "date": "2024-04-13",
+    "medium": "paid",
+    "sessions": 1116,
+    "users": 1169,
+    "pageviews": 1547,
+    "conversions": 50,
+    "users_new": 545,
+    "users_returning": 624
+  },
+  {
+    "date": "2024-04-14",
+    "medium": "organic",
+    "sessions": 1220,
+    "users": 1041,
+    "pageviews": 2752,
+    "conversions": 42,
+    "users_new": 491,
+    "users_returning": 550
+  },
+  {
+    "date": "2024-04-15",
+    "medium": "social",
+    "sessions": 1170,
+    "users": 1170,
+    "pageviews": 2209,
+    "conversions": 56,
+    "users_new": 538,
+    "users_returning": 632
+  },
+  {
+    "date": "2024-04-16",
+    "medium": "direct",
+    "sessions": 1320,
+    "users": 911,
+    "pageviews": 2187,
+    "conversions": 57,
+    "users_new": 470,
+    "users_returning": 441
+  },
+  {
+    "date": "2024-04-17",
+    "medium": "referral",
+    "sessions": 870,
+    "users": 868,
+    "pageviews": 2012,
+    "conversions": 49,
+    "users_new": 420,
+    "users_returning": 448
+  },
+  {
+    "date": "2024-04-18",
+    "medium": "referral",
+    "sessions": 1266,
+    "users": 785,
+    "pageviews": 2914,
+    "conversions": 20,
+    "users_new": 319,
+    "users_returning": 466
+  },
+  {
+    "date": "2024-04-19",
+    "medium": "direct",
+    "sessions": 1305,
+    "users": 958,
+    "pageviews": 2754,
+    "conversions": 44,
+    "users_new": 412,
+    "users_returning": 546
+  },
+  {
+    "date": "2024-04-20",
+    "medium": "direct",
+    "sessions": 993,
+    "users": 1062,
+    "pageviews": 1815,
+    "conversions": 45,
+    "users_new": 524,
+    "users_returning": 538
+  },
+  {
+    "date": "2024-04-21",
+    "medium": "direct",
+    "sessions": 1059,
+    "users": 1121,
+    "pageviews": 2875,
+    "conversions": 49,
+    "users_new": 716,
+    "users_returning": 405
+  },
+  {
+    "date": "2024-04-22",
+    "medium": "direct",
+    "sessions": 1021,
+    "users": 990,
+    "pageviews": 1638,
+    "conversions": 51,
+    "users_new": 676,
+    "users_returning": 314
+  },
+  {
+    "date": "2024-04-23",
+    "medium": "referral",
+    "sessions": 1415,
+    "users": 905,
+    "pageviews": 2428,
+    "conversions": 51,
+    "users_new": 557,
+    "users_returning": 348
+  },
+  {
+    "date": "2024-04-24",
+    "medium": "email",
+    "sessions": 913,
+    "users": 929,
+    "pageviews": 2928,
+    "conversions": 58,
+    "users_new": 631,
+    "users_returning": 298
+  },
+  {
+    "date": "2024-04-25",
+    "medium": "email",
+    "sessions": 1038,
+    "users": 832,
+    "pageviews": 2925,
+    "conversions": 21,
+    "users_new": 437,
+    "users_returning": 395
+  },
+  {
+    "date": "2024-04-26",
+    "medium": "organic",
+    "sessions": 899,
+    "users": 992,
+    "pageviews": 2946,
+    "conversions": 55,
+    "users_new": 456,
+    "users_returning": 536
+  },
+  {
+    "date": "2024-04-27",
+    "medium": "social",
+    "sessions": 1173,
+    "users": 1175,
+    "pageviews": 2016,
+    "conversions": 46,
+    "users_new": 674,
+    "users_returning": 501
+  },
+  {
+    "date": "2024-04-28",
+    "medium": "paid",
+    "sessions": 1274,
+    "users": 1090,
+    "pageviews": 2017,
+    "conversions": 56,
+    "users_new": 637,
+    "users_returning": 453
+  },
+  {
+    "date": "2024-04-29",
+    "medium": "paid",
+    "sessions": 829,
+    "users": 803,
+    "pageviews": 2202,
+    "conversions": 50,
+    "users_new": 350,
+    "users_returning": 453
+  },
+  {
+    "date": "2024-04-30",
+    "medium": "organic",
+    "sessions": 1461,
+    "users": 600,
+    "pageviews": 2592,
+    "conversions": 46,
+    "users_new": 350,
+    "users_returning": 250
   }
 ]
