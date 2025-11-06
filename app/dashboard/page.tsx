@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ComponentType } from "react";
 
 type Medium = "direct" | "organic" | "paid" | "referral" | "social" | "email";
 
@@ -16,11 +16,25 @@ type SampleRow = {
   users_returning: number;
 };
 
-type NumericField = Exclude<keyof AnalyticsRow, "date">;
+type DateRange = 30 | 60 | 90;
 
-type SampleResponse = {
-  ok: boolean;
-  rows: AnalyticsRow[];
+const rangeOptions: DateRange[] = [30, 60, 90];
+const mediumOrder: Medium[] = [
+  "direct",
+  "organic",
+  "paid",
+  "referral",
+  "social",
+  "email",
+];
+
+const mediumColors: Record<Medium, string> = {
+  direct: "#22c55e",
+  organic: "#0ea5e9",
+  paid: "#ef4444",
+  referral: "#f59e0b",
+  social: "#8b5cf6",
+  email: "#14b8a6",
 };
 
 const pieColors = {
@@ -28,49 +42,36 @@ const pieColors = {
   returning: "#22c55e",
 };
 
-const AreaChart = dynamic(() => import("recharts").then((mod) => mod.AreaChart), {
-  ssr: false,
-});
-const Area = dynamic(() => import("recharts").then((mod) => mod.Area), {
-  ssr: false,
-});
-const BarChart = dynamic(() => import("recharts").then((mod) => mod.BarChart), {
-  ssr: false,
-});
-const Bar = dynamic(() => import("recharts").then((mod) => mod.Bar), {
-  ssr: false,
-});
-const LineChart = dynamic(() => import("recharts").then((mod) => mod.LineChart), {
-  ssr: false,
-});
-const Line = dynamic(() => import("recharts").then((mod) => mod.Line), {
-  ssr: false,
-});
-const PieChart = dynamic(() => import("recharts").then((mod) => mod.PieChart), {
-  ssr: false,
-});
-const Pie = dynamic(() => import("recharts").then((mod) => mod.Pie), {
-  ssr: false,
-});
-const Cell = dynamic(() => import("recharts").then((mod) => mod.Cell), {
-  ssr: false,
-});
-const ResponsiveContainer = dynamic(
-  () => import("recharts").then((mod) => mod.ResponsiveContainer),
-  { ssr: false }
-);
-const Tooltip = dynamic(() => import("recharts").then((mod) => mod.Tooltip), {
-  ssr: false,
-});
-const XAxis = dynamic(() => import("recharts").then((mod) => mod.XAxis), {
-  ssr: false,
-});
-const YAxis = dynamic(() => import("recharts").then((mod) => mod.YAxis), {
-  ssr: false,
-});
-const Legend = dynamic(() => import("recharts").then((mod) => mod.Legend), {
-  ssr: false,
-});
+type RechartsModule = typeof import("recharts");
+
+const loadRecharts = () => import("recharts");
+
+const createRechartsComponent = <K extends keyof RechartsModule>(key: K) =>
+  dynamic(async () => {
+    const mod = await loadRecharts();
+    const Component = mod[key] as ComponentType<any> | undefined;
+
+    if (!Component) {
+      throw new Error(`Component ${String(key)} is not available in recharts`);
+    }
+
+    return { default: Component };
+  }, { ssr: false }) as RechartsModule[K];
+
+const AreaChart = createRechartsComponent("AreaChart");
+const Area = createRechartsComponent("Area");
+const BarChart = createRechartsComponent("BarChart");
+const Bar = createRechartsComponent("Bar");
+const LineChart = createRechartsComponent("LineChart");
+const Line = createRechartsComponent("Line");
+const PieChart = createRechartsComponent("PieChart");
+const Pie = createRechartsComponent("Pie");
+const Cell = createRechartsComponent("Cell");
+const ResponsiveContainer = createRechartsComponent("ResponsiveContainer");
+const Tooltip = createRechartsComponent("Tooltip");
+const XAxis = createRechartsComponent("XAxis");
+const YAxis = createRechartsComponent("YAxis");
+const Legend = createRechartsComponent("Legend");
 
 type Totals = {
   sessions: number;
@@ -138,29 +139,11 @@ const aggregateTotals = (rows: SampleRow[]): Totals => {
   );
 };
 
-  return data
-    .map((entry) => {
-      if (typeof entry !== "object" || entry === null) {
-        return null;
-      }
-      const record = entry as Record<string, unknown>;
-      const date = typeof record.date === "string" ? record.date : "";
-      const numberFields: NumericField[] = [
-        "sessions",
-        "users",
-        "pageviews",
-        "conversions",
-        "revenue",
-      ];
-
-      const parsed: AnalyticsRow = {
-        date,
-        sessions: 0,
-        users: 0,
-        pageviews: 0,
-        conversions: 0,
-        revenue: 0,
-      };
+const formatNumber = (value: number): string => {
+  return new Intl.NumberFormat("en-US", {
+    maximumFractionDigits: value >= 100 ? 0 : 1,
+  }).format(value);
+};
 
 const formatPercent = (value: number): string => {
   if (!Number.isFinite(value)) {
@@ -394,32 +377,11 @@ const DashboardPage = () => {
           </div>
         </header>
 
-        <section className="grid gap-4 rounded-xl bg-slate-900 p-6 shadow-lg">
-          <label htmlFor="data-input" className="text-sm font-medium text-slate-300">
-            Paste CSV or JSON data
-          </label>
-          <textarea
-            id="data-input"
-            className="h-40 w-full rounded-lg border border-slate-700 bg-slate-950 p-4 font-mono text-sm text-slate-100 focus:border-sky-500 focus:outline-none"
-            value={rawInput}
-            onChange={(event) => setRawInput(event.target.value)}
-            placeholder='[{"date": "2024-01-01", "sessions": 1200, ...}]'
-          />
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <button
-              type="button"
-              onClick={handleParse}
-              className="inline-flex items-center justify-center rounded-md border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition hover:border-sky-400 hover:text-sky-200"
-            >
-              Analyze data
-            </button>
-            {error ? (
-              <p className="text-sm text-rose-400">{error}</p>
-            ) : (
-              <p className="text-sm text-slate-500">
-                Parsed rows: <span className="text-slate-200">{rows.length}</span>
-              </p>
-            )}
+        {loading ? (
+          <div className="flex items-center justify-center py-24">
+            <span className="text-sm uppercase tracking-[0.3em] text-slate-400">
+              Loading dashboard…
+            </span>
           </div>
         ) : error ? (
           <div className="rounded-lg border border-rose-500/40 bg-rose-500/10 p-6 text-sm text-rose-100">
