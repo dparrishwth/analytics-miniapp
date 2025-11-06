@@ -5,10 +5,11 @@ import { useEffect, useState } from "react";
 type HealthResponse = {
   ok: boolean;
   env: {
-    GA4_PROPERTY_ID: boolean;
-    BIGQUERY_PROJECT_ID: boolean;
-    GOOGLE_APPLICATION_CREDENTIALS_JSON: boolean;
+    hasGA4: boolean;
+    hasBQ: boolean;
+    hasSA: boolean;
   };
+  ts: string;
 };
 
 export default function HomePage() {

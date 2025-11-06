@@ -75,12 +75,15 @@ web_modules/
 .parcel-cache
 
 # Next.js build output
-.next
+.next/
 out
+
+# Vercel
+.vercel/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/
 
 # Gatsby files
 .cache/
