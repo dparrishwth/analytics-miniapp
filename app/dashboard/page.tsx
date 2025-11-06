@@ -235,23 +235,32 @@ const DashboardPage = () => {
     );
   }, [rows]);
 
-  const filteredRows = useMemo(() => {
+  const { filteredRows, previousRows } = useMemo(() => {
     if (!sortedRows.length) {
-      return [];
+      return { filteredRows: [] as SampleRow[], previousRows: [] as SampleRow[] };
     }
 
-    const sliceStart = Math.max(0, sortedRows.length - range);
-    return sortedRows.slice(sliceStart);
-  }, [sortedRows, range]);
-
-  const previousRows = useMemo(() => {
-    if (!sortedRows.length) {
-      return [];
+    const uniqueDates: string[] = [];
+    const seenDates = new Set<string>();
+    for (const row of sortedRows) {
+      if (!seenDates.has(row.date)) {
+        seenDates.add(row.date);
+        uniqueDates.push(row.date);
+      }
     }
 
-    const end = Math.max(0, sortedRows.length - range);
-    const start = Math.max(0, end - range);
-    return sortedRows.slice(start, end);
+    const currentStartIndex = Math.max(uniqueDates.length - range, 0);
+    const previousStartIndex = Math.max(currentStartIndex - range, 0);
+
+    const currentDateSet = new Set(uniqueDates.slice(currentStartIndex));
+    const previousDateSet = new Set(
+      uniqueDates.slice(previousStartIndex, currentStartIndex)
+    );
+
+    return {
+      filteredRows: sortedRows.filter((row) => currentDateSet.has(row.date)),
+      previousRows: sortedRows.filter((row) => previousDateSet.has(row.date)),
+    };
   }, [sortedRows, range]);
 
   const totals = useMemo(() => aggregateTotals(filteredRows), [filteredRows]);
