@@ -218,18 +218,6 @@ export default function DashboardPage() {
     };
   }, [rows]);
 
-  const totalsData = useMemo(() => {
-    const entries = [
-      { label: "Sessions", value: totals.sessions, color: "bg-sky-500" },
-      { label: "Users", value: totals.users, color: "bg-violet-500" },
-      { label: "Pageviews", value: totals.pageviews, color: "bg-emerald-500" },
-      { label: "Revenue", value: totals.revenue, color: "bg-amber-500" },
-    ];
-    const max = Math.max(...entries.map((entry) => entry.value), 1);
-
-    return { entries, max };
-  }, [totals]);
-
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100 p-8 font-sans">
       <div className="mx-auto max-w-5xl space-y-8">
@@ -309,6 +297,45 @@ export default function DashboardPage() {
               </div>
             </section>
 
+            <section className="space-y-4 overflow-hidden rounded-xl bg-slate-900 p-6 shadow">
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-semibold text-slate-100">Recent performance</h2>
+                <span className="text-sm text-slate-400">Showing {rows.length} days</span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-slate-800 text-sm">
+                  <thead className="bg-slate-900/80 text-left text-slate-400">
+                    <tr>
+                      <th scope="col" className="px-4 py-2 font-medium">
+                        Date
+                      </th>
+                      <th scope="col" className="px-4 py-2 font-medium">
+                        Sessions
+                      </th>
+                      <th scope="col" className="px-4 py-2 font-medium">
+                        Users
+                      </th>
+                      <th scope="col" className="px-4 py-2 font-medium">
+                        Conversions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800 text-slate-200">
+                    {rows.map((row) => (
+                      <tr key={row.date} className="hover:bg-slate-900/60">
+                        <td className="whitespace-nowrap px-4 py-2 font-medium text-slate-100">
+                          {row.date}
+                        </td>
+                        <td className="px-4 py-2">{formatNumber(row.sessions)}</td>
+                        <td className="px-4 py-2">{formatNumber(row.users)}</td>
+                        <td className="px-4 py-2">{formatNumber(row.conversions)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
             <section className="space-y-4 rounded-xl bg-slate-900 p-6 shadow">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold text-slate-100">Sessions vs conversions</h2>
@@ -347,9 +374,12 @@ export default function DashboardPage() {
             </section>
 
             <section className="space-y-4 rounded-xl bg-slate-900 p-6 shadow">
-              <h2 className="text-lg font-semibold text-slate-100">Totals overview</h2>
+              <h2 className="text-lg font-semibold text-slate-100">Sessions vs conversions total</h2>
               <div className="space-y-3">
-                {totalsData.entries.map((entry) => (
+                {[
+                  { label: "Sessions", value: totals.sessions, color: "bg-sky-500" },
+                  { label: "Conversions", value: totals.conversions, color: "bg-rose-500" },
+                ].map((entry) => (
                   <div key={entry.label} className="space-y-1">
                     <div className="flex items-center justify-between text-sm text-slate-300">
                       <span>{entry.label}</span>
@@ -360,7 +390,13 @@ export default function DashboardPage() {
                     <div className="h-2 w-full rounded-full bg-slate-800">
                       <div
                         className={`h-2 rounded-full ${entry.color}`}
-                        style={{ width: `${(entry.value / totalsData.max) * 100}%` }}
+                        style={{
+                          width: `${
+                            totals.sessions === 0
+                              ? 0
+                              : Math.min((entry.value / totals.sessions) * 100, 100)
+                          }%`,
+                        }}
                       />
                     </div>
                   </div>
